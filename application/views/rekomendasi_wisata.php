@@ -21,31 +21,31 @@
         <!-- general form elements -->
         <div class="box box-primary">
           <div class="box-header with-border">
-            <h3 class="box-title">Data Destinasi Wisata</h3>
+            <h3 class="box-title">Mencari Rekomendasi Wisata</h3>
           </div>
           <!-- /.box-header -->
           <!-- form start -->
           <form role="form">
             <div class="box-body">
               <div class="form-group">
-                <label>No</label>
-                <input type="number" class="form-control" placeholder="Masukkan No">
+                <label>Masukkan Nama</label>
+                <input type="number" class="form-control" placeholder="Masukkan Nama">
               </div>
               <div class="form-group">
-                <label>Nama Daerah</label>
-                <input type="text" class="form-control" placeholder="Masukkan Nama Daerah">
+                <label>Masukkan Kriteria Hobi</label>
+                <input type="text" class="form-control" placeholder="Masukkan Hobi">
               </div>
               <div class="form-group">
-                <label>Nama Destinasi</label>
-                <input type="text" class="form-control" placeholder="Masukkan Destinasi">
+                <label>Masukkan Kriteria Jarak</label>
+                <input type="text" class="form-control" placeholder="Masukkan Jarak">
               </div>
               <div class="form-group">
-                <label>Alamat</label>
-                <input type="text" class="form-control" placeholder="Masukkan Alamat">
+                <label>Masukkan Kriteria Fasilitas</label>
+                <input type="text" class="form-control" placeholder="Masukkan Fasilitas">
               </div>
               <div class="form-group">
-                <label>Harga</label>
-                <input type="text" class="form-control" placeholder="Masukkan Harga">
+                <label>Masukkan Kriteria Usia</label>
+                <input type="text" class="form-control" placeholder="Masukkan Usia">
 
                 <p class="help-block">Example block-level help text here.</p>
               </div>

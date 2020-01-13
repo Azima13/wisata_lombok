@@ -37,4 +37,11 @@ class Wisata extends CI_Controller {
        echo "<script>window.location.href='".base_url()."Wisata"."';</script>";
      }
   }
+  public function rekomendasi()
+  {
+    // code...
+    $this->load->view('top');
+    $this->load->view('rekomendasi_wisata');
+    $this->load->view('bottom');
+  }
 }
