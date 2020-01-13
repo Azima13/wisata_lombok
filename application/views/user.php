@@ -22,7 +22,7 @@
             <h3 class="box-title">Data Berita</h3>
             <div class="box-body">
             <div class="pull-right">
-              <a href="<?php echo base_url()?>Berita/tambah_berita" class="btn btn-primary"><i class="mdi mid-plus-circle mr-2 fa fa-plus"></i>Tambah Berita</a>
+              <a href="<?php echo base_url()?>User/tambah_user" class="btn btn-primary"><i class="mdi mid-plus-circle mr-2 fa fa-plus"></i>Tambah User</a>
             </div>
             </div>
           </div>
@@ -31,10 +31,10 @@
             <table id="example1" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>No</th>
+                <th>ID User</th>
+                <th>Nama User</th>
                 <th>Username</th>
-                <th>Judul</th>
-                <th>Deskripsi</th>
+                <th>Password</th>
               </tr>
               </thead>
               <tbody>
@@ -42,10 +42,10 @@
                   foreach ($wisata ->result_array() as $data) {
                  ?>
               <tr>
-                <td><?php echo $data['id_berita']; ?></td>
+                <td><?php echo $data['id_user']; ?></td>
+                <td><?php echo $data['nama_user']; ?></td>
                 <td><?php echo $data['username']; ?></td>
-                <td><?php echo $data['judul']; ?></td>
-                <td><?php echo $data['deskripsi_berita']; ?></td>
+                <td><?php echo $data['password']; ?></td>
               </tr>
             <?php } ?>
               </tfoot>

@@ -1,8 +1,8 @@
 <?php if(!defined('BASEPATH'))exit('No direct script access allowed');
 
-class Model_berita extends CI_MODEL {
+class Model_user extends CI_MODEL {
   public function get_wisata(){
-    $q = $this->db->get("berita");
+    $q = $this->db->get("tb_user");
     return $q;
   }
 

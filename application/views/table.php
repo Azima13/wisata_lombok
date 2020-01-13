@@ -21,6 +21,11 @@
             <div class="box-header">
               <h3 class="box-title">Data Wisata</h3>
             </div>
+            <div class="box-body">
+            <div class="pull-right">
+              <a href="<?php echo base_url()?>Wisata/tambah_data" class="btn btn-primary"><i class="mdi mid-plus-circle mr-2 fa fa-plus"></i>Tambah Data</a>
+            </div>
+            </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">

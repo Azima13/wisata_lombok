@@ -15,4 +15,26 @@ class Wisata extends CI_Controller {
     $this->load->view('table', $data);
     $this->load->view('bottom');
 	}
+  public function tambah_data()
+  {
+    // code...
+    $this->load->view('top');
+    $this->load->view('tambah_data');
+    $this->load->view('bottom');
+  }
+  public function add()
+  {
+    // code...
+    $data = array(
+        'no' => $this->input->post('no'),
+        'nama_daerah' => $this->input->post('nama_daerah'),
+        'nama_destinasi' => $this->input->post('nama_destinasi'),
+        'alamat' => $this->input->post('alamat'),
+        'harga' => $this->input->post('harga')
+     );
+     if ($this->db->insert('tb_destinasi', $data)) {
+       // code...
+       echo "<script>window.location.href='".base_url()."Wisata"."';</script>";
+     }
+  }
 }

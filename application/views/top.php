@@ -28,6 +28,16 @@
   <![endif]-->
 
   <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -122,10 +132,10 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li><a href="<?php echo base_url()?>Niomic"><i class="fa fa-circle-o"></i> <span>Destinasi Wisata</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Cari Rekomendasi</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Berita</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>User</span></a></li>
+        <li><a href="<?php echo base_url()?>Wisata"><i class="fa fa-circle-o"></i> <span>Destinasi Wisata</span></a></li>
+        <li><a href="<?php echo base_url()?>"><i class="fa fa-circle-o text-red"></i> <span>Cari Rekomendasi</span></a></li>
+        <li><a href="<?php echo base_url()?>Berita"><i class="fa fa-circle-o text-yellow"></i> <span>Berita Wisata</span></a></li>
+        <li><a href="<?php echo base_url()?>User"><i class="fa fa-circle-o text-aqua"></i> <span>User</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
