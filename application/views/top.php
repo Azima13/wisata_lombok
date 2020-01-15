@@ -133,7 +133,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li><a href="<?php echo base_url()?>Wisata"><i class="fa fa-circle-o"></i> <span>Destinasi Wisata</span></a></li>
-        <li><a href="<?php echo base_url()?>"><i class="fa fa-circle-o text-red"></i> <span>Cari Rekomendasi</span></a></li>
+        <li><a href="<?php echo base_url()?>Wisata/rekomendasi"><i class="fa fa-circle-o text-red"></i> <span>Cari Rekomendasi</span></a></li>
         <li><a href="<?php echo base_url()?>Berita"><i class="fa fa-circle-o text-yellow"></i> <span>Berita Wisata</span></a></li>
         <li><a href="<?php echo base_url()?>User"><i class="fa fa-circle-o text-aqua"></i> <span>User</span></a></li>
       </ul>

@@ -19,6 +19,22 @@
       <div class="col-xs-12">
         <div class="box">
           <div class="box-header">
+            <?php if ($this->session->flashdata('success')) { ?>
+            <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <i class="fa fa-close"></i>
+              </button>
+              <span style="text-align:left;"><?php echo $this->session->flashdata('success'); ?></span>
+            </div>
+            <?php } ?>
+            <?php if ($this->session->flashdata('error')) { ?>
+            <div class="alert alert-error">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <i class="fa fa-close"></i>
+              </button>
+              <span style="text-align:left;"><?php echo $this->session->flashdata('error'); ?></span>
+            </div>
+            <?php } ?>
             <h3 class="box-title">Data Berita</h3>
             <div class="box-body">
             <div class="pull-right">
@@ -35,6 +51,7 @@
                 <th>Username</th>
                 <th>Judul</th>
                 <th>Deskripsi</th>
+                <th>Aksi</th>
               </tr>
               </thead>
               <tbody>
@@ -46,6 +63,9 @@
                 <td><?php echo $data['username']; ?></td>
                 <td><?php echo $data['judul']; ?></td>
                 <td><?php echo $data['deskripsi_berita']; ?></td>
+                <td><span data-toggle="tooltip" data-original-title="Edit Data" style="font-size:10;"><a class="btn btn-warning" href="<?php echo base_url()?>Berita/edit_berita/<?php echo $data['id_berita']; ?>"><i class="fa fa-edit"></i></a></span>
+                    <span data-toggle="tooltip" data-original-title="Hapus Data" style="font-size:10;"><a class="btn btn-danger" href="<?php echo base_url()?>Berita/delete/<?php echo $data['id_berita']; ?>"><i class="fa fa-trash-o"></i></a></span>
+                </td>
               </tr>
             <?php } ?>
               </tfoot>
